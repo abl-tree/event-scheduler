@@ -29,21 +29,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		@elseif (!App::isLocal() && Request::server('HTTP_X_FORWARDED_PROTO') == 'http')
 			<link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 			<link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all">
+			<link href="{{ asset('css/popuo-box.css') }}" rel="stylesheet" type="text/css" media="all" />
 			<script src="{{ asset('js/jquery.min.js') }}" defer></script>
 			<!-- start-smoth-scrolling -->
 			<script type="text/javascript" src="{{ asset('js/move-top.js') }}" defer></script>
 			<script type="text/javascript" src="{{ asset('js/easing.js') }}" defer></script>
 			<!-- banner Slider starts Here -->
 			<script src="{{ asset('js/responsiveslides.min.js') }}" defer></script>
+			<!-- pop-up-box -->
+			<script type="text/javascript" src="{{ asset('js/modernizr.custom.min.js') }}"></script>    
+			<script type="text/javascript" src="{{ asset('js/jquery.magnific-popup.js') }}"></script>
+			<!--//pop-up-box-->
 		@else
 			<link href="{{ secure_asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 			<link href="{{ secure_asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all">
+			<link href="{{ secure_asset('css/popuo-box.css') }}" rel="stylesheet" type="text/css" media="all" />
 			<script src="{{ secure_asset('js/jquery.min.js') }}" defer></script>
 			<!-- start-smoth-scrolling -->
 			<script type="text/javascript" src="{{ secure_asset('js/move-top.js') }}" defer></script>
 			<script type="text/javascript" src="{{ secure_asset('js/easing.js') }}" defer></script>
 			<!-- banner Slider starts Here -->
-			<script src="{{ asset('js/responsiveslides.min.js') }}" defer></script>
+			<script src="{{ secure_asset('js/responsiveslides.min.js') }}" defer></script>
+			<!-- pop-up-box -->
+			<script type="text/javascript" src="{{ secure_asset('js/modernizr.custom.min.js') }}"></script>    
+			<script type="text/javascript" src="{{ secure_asset('js/jquery.magnific-popup.js') }}"></script>
+			<!--//pop-up-box-->
 		@endif
 		<!-- web-font -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,700,800,400,600' rel='stylesheet' type='text/css'>
